@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #152427;
+    --text-color: #575d5e;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Public Sans", sans-serif; */
+}
+
+/* Common */
+.container {
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    min-width: 173px;
+    height: 57px;
+    background: #143c3c;
+    border: 1.5px solid #143c3c;
+    border-radius: 40px;
+    padding: 0 15px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 57px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-h1 {
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+/* Header */
+.header {
+    background: #efefef;
+    padding-top: 28px;
+    font-family: "Public Sans", sans-serif;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 13px;
+}
+
+.navbar::after {
+    display: inline-block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #dddcdc 51.09%,
+        rgba(213, 213, 213, 0) 99.68%
+    );
+    position: absolute;
+    bottom: 0;
+}
+
+.navbar__list {
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar__item {
+    padding: 8px 19px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: var(--text-color);
+    transition: 0.25s;
+}
+
+.navbar__item:hover {
+    color: var(--primary-color);
+}
+
+.navbar__first-item {
+    position: relative;
+}
+
+.navbar__first-item::after {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background: #143c3c;
+    position: absolute;
+    bottom: -24px;
+    left: 19px;
+    z-index: 1;
+}
+
+.navbar__btn {
+    margin-left: 88px;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.hero__content {
+    max-width: 34%;
+}
+
+.hero__heading {
+    max-width: 368px;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 28px;
+    color: #575d5e;
+}
+
+.hero__cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 42px;
+}
+
+.hero__watch-video {
+    margin-left: 43px;
+}
+
+.hero__play {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #83a17d;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.half-circle {
+    position: absolute;
+    left: -8px;
+    top: -8px;
+}
+
+.hero__watch-video__desc {
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #152427;
+}
+
+.hero__images {
+    display: flex;
+    column-gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero__images::after {
+    display: inline-block;
+    content: "";
+    background: #4dbb9a;
+    filter: blur(200px);
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.hero-img {
+    display: block;
+    width: 202px;
+    height: 466px;
+    object-fit: cover;
+    border-radius: 110px;
+}
+
+.hero-img:nth-of-type(2) {
+    margin-top: 77px;
+}
+
+.flower-decor {
+    position: absolute;
+    top: -35px;
+    left: -190px;
+}
+
+.flower {
+    position: absolute;
+    top: 8px;
+    left: -40px;
+}
+
+.flower-decor:nth-of-type(2) {
+    position: absolute;
+    transform: rotate(180deg);
+    right: 50px;
+    bottom: -85px;
+}
+
+.branch {
+    margin-top: 130px;
+}
+
+.branch__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #E2EDDF;
+    border-radius: 999px;
+    height: 200px;
+}
+
+.branch__item {
+    display: inline-flex;
+    align-items: center;
+    max-width: 140px;
+    height: 50px;
+}
+
+.branch__item__text
+{
+    margin-left: 10px;
+    width: 107px;
+}
+
